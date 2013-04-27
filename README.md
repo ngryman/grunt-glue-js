@@ -1,4 +1,4 @@
-# grunt-contrib-gluejs [![Build Status](https://secure.travis-ci.org/ngryman/grunt-contrib-gluejs.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-gluejs)
+# grunt-contrib-gluejs [![Build Status](https://secure.travis-ci.org/ngryman/grunt-contrib-gluejs.png?branch=master)](http://travis-ci.org/ngryman/grunt-contrib-gluejs)
 
 > Grunt task to build CommonJS modules for the browser using gluejs.
 

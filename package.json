@@ -1,0 +1,32 @@
+{
+	"name": "grunt-contrib-gluejs",
+	"description": "Grunt task to build CommonJS modules for the browser using gluejs.",
+	"version": "0.0.1",
+	"homepage": "https://github.com/ngryman/grunt-contrib-gluejs",
+	"author": "Nicolas Gryman <ngryman@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ngryman/grunt-contrib-gluejs.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ngryman/grunt-contrib-gluejs/issues"
+	},
+	"license": "MIT",
+	"main": "Gruntfile.js",
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"scripts": {
+		"test": "grunt test"
+	},
+	"dependencies": {
+		"gluejs": "https://github.com/ngryman/gluejs/tarball/master"
+	},
+	"devDependencies": {
+		"grunt-contrib-jshint": "~0.2.0",
+		"grunt-mocha-cli": "~1.0.3",
+		"grunt-contrib-internal": "~0.4.2",
+		"grunt": "~0.4.0",
+		"chai": "~1.5.0"
+	}
+}

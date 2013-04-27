@@ -1,4 +1,4 @@
-# grunt-contrib-gluejs [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-gluejs.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-gluejs)
+# grunt-contrib-gluejs [![Build Status](https://secure.travis-ci.org/ngryman/grunt-contrib-gluejs.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-gluejs)
 
 > Grunt task to build CommonJS modules for the browser using gluejs.
 
@@ -62,11 +62,10 @@ grunt.initConfig({
 
 ## Release History
 
-_(Nothing yet)_
-
+ * 2013-04-27   v0.0.1   Initial release.
 
 ---
 
 Task submitted by ["ngryman" Nicolas Gryman](http://ngryman.sh)
 
-*This file was generated on Sat Apr 27 2013 17:13:09.*
+*This file was generated on Sat Apr 27 2013 17:17:49.*

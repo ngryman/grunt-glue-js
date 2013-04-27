@@ -3,7 +3,10 @@
 	"description": "Grunt task to build CommonJS modules for the browser using gluejs.",
 	"version": "0.0.1",
 	"homepage": "https://github.com/ngryman/grunt-contrib-gluejs",
-	"author": "Nicolas Gryman <ngryman@gmail.com>",
+	"author": {
+    	"name": "Nicolas Gryman",
+    	"url": "http://ngryman.sh"
+  	},
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/ngryman/grunt-contrib-gluejs.git"
@@ -28,5 +31,8 @@
 		"grunt-contrib-internal": "~0.4.2",
 		"grunt": "~0.4.0",
 		"chai": "~1.5.0"
-	}
+	},
+	"peerDependencies": {
+    	"grunt": "~0.4.0"
+  	}
 }

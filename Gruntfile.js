@@ -57,5 +57,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-internal');
 
 	grunt.registerTask('test', ['gluejs', 'mochacli']);
-	grunt.registerTask('default', ['jshint', 'test'/*, 'build-contrib'*/]);
+	grunt.registerTask('default', ['jshint', 'test', 'build-contrib']);
 };

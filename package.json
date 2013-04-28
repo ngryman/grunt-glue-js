@@ -14,6 +14,14 @@
 	"bugs": {
 		"url": "https://github.com/ngryman/grunt-contrib-gluejs/issues"
 	},
+	"keywords": [
+		"commonjs",
+		"require",
+		"packager",
+		"bundler",
+		"gluejs",
+		"gruntplugin"
+	],
 	"license": "MIT",
 	"main": "Gruntfile.js",
 	"engines": {

@@ -1,3 +1,9 @@
+v0.0.2:
+  date: 2013-04-28
+  changes:
+    - Upgraded grunt-contrib-internal dep.
+    - Published to npm.
+
 v0.0.1:
   date: 2013-04-27
   changes:

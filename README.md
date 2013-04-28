@@ -1,9 +1,7 @@
-# grunt-contrib-gluejs [![Build Status](https://secure.travis-ci.org/ngryman/grunt-contrib-gluejs.png?branch=master)](http://travis-ci.org/ngryman/grunt-contrib-gluejs)
+# grunt-contrib-gluejs [![Build Status](https://travis-ci.org/ngryman/grunt-contrib-gluejs.png?branch=master)](https://travis-ci.org/ngryman/grunt-contrib-gluejs)
 
 > Grunt task to build CommonJS modules for the browser using gluejs.
 
-
-_Note that this is not an official Grunt plugin release! If you want to use this in a project, please be sure to follow the instructions for installing development versions, as outlined in the [Installing Grunt](http://gruntjs.com/installing-grunt) guide._
 
 
 ## Getting Started
@@ -62,10 +60,11 @@ grunt.initConfig({
 
 ## Release History
 
+ * 2013-04-28   v0.0.2   Upgraded grunt-contrib-internal dep. Published to npm.
  * 2013-04-27   v0.0.1   Initial release.
 
 ---
 
 Task submitted by ["ngryman" Nicolas Gryman](http://ngryman.sh)
 
-*This file was generated on Sat Apr 27 2013 17:17:49.*
+*This file was generated on Sun Apr 28 2013 14:28:22.*

@@ -7,8 +7,8 @@ chai.should();
 
 describe('gluejs', function() {
 	after(function() {
-		var stats = fs.statSync('test/fixtures/package/index.js');
-		//fs.unlinkSync('test/fixtures/package/index.js');
+		fs.unlinkSync('test/fixtures/package/index.js');
+		fs.unlinkSync('test/fixtures/app.js');
 	});
 
 	it('should build a directory module', function(done) {
@@ -20,7 +20,7 @@ describe('gluejs', function() {
 
 	it('should ignore destination file', function(done) {
 		fs.stat('test/fixtures/package/index.js', function(err, stats) {
-			stats.size.should.equal(701);
+			stats.size.should.lessThan(1000);
 			done();
 		});
 	});

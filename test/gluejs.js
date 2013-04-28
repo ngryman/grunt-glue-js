@@ -20,7 +20,7 @@ describe('gluejs', function() {
 
 	it('should ignore destination file', function(done) {
 		fs.stat('test/fixtures/package/index.js', function(err, stats) {
-			stats.size.should.equal(697);
+			stats.size.should.equal(701);
 			done();
 		});
 	});

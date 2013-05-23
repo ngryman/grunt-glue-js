@@ -24,10 +24,9 @@ module.exports = function(grunt) {
 		if (options.process === true) { options.process = {}; }
 
 		// default options for glue
-		// TODO: uncomment, waiting https://github.com/mixu/gluejs/issues/11
-		//		Glue.defaults({
-		//			replace: options.replace
-		//		});
+		Glue.defaults({
+			replace: options.replace
+		});
 
 		// processes banner and footer.
 		var banner = options.banner ? grunt.template.process(options.banner) : '';
@@ -36,10 +35,6 @@ module.exports = function(grunt) {
 		// iterates over all src-dest file pairs.
 		this.files.forEach(function(file) {
 			var glue = new Glue();
-
-			// default options for glue
-			// TODO: remove, waiting https://github.com/mixu/gluejs/issues/11
-			if (options.replace) { glue.replace(options.replace); }
 
 			// export
 			if (options.export) { glue.export(options.export); }

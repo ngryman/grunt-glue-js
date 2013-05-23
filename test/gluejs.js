@@ -9,6 +9,7 @@ describe('gluejs', function() {
 	after(function() {
 		fs.unlinkSync('test/fixtures/package/index.js');
 		fs.unlinkSync('test/fixtures/app.js');
+		fs.unlinkSync('test/fixtures/jquery.js');
 	});
 
 	it('should build a directory module', function(done) {
@@ -28,6 +29,13 @@ describe('gluejs', function() {
 	it('should export to the given export option', function(done) {
 		fs.readFile('test/fixtures/app.js', 'utf8', function(err, content) {
 			content.should.match(/App = require\(\'index.js\'\);/);
+			done();
+		});
+	});
+
+	it('should replace specified values', function(done) {
+		fs.readFile('test/fixtures/jquery.js', 'utf8', function(err, content) {
+			content.should.match(/"jquery": \{ exports: window\.\$ \}/);
 			done();
 		});
 	});

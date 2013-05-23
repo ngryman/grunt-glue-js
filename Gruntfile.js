@@ -44,8 +44,17 @@ module.exports = function(grunt) {
 				options: {
 					export: 'App'
 				},
-				src: 'test/fixtures/packagey/a.js',
+				src: 'test/fixtures/package/a.js',
 				dest: 'test/fixtures/app.js'
+			},
+			replace: {
+				options: {
+					replace: {
+						jquery: 'window.$'
+					}
+				},
+				src: 'test/fixtures/package/jquery.js',
+				dest: 'test/fixtures/jquery.js'
 			}
 		}
 	});

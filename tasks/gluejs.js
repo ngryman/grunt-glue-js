@@ -24,9 +24,7 @@ module.exports = function(grunt) {
 		if (options.process === true) { options.process = {}; }
 
 		// default options for glue
-		Glue.defaults({
-			replace: options.replace
-		});
+		Glue.defaults(options);
 
 		// processes banner and footer.
 		var banner = options.banner ? grunt.template.process(options.banner) : '';

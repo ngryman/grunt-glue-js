@@ -34,11 +34,11 @@ module.exports = function(grunt) {
 		gluejs: {
 			directory: {
 				src: 'test/fixtures/package/*.js',
-				dest: 'test/fixtures/package/index.js'
+				dest: 'test/fixtures/index.js'
 			},
 			ignore: {
 				src: 'test/fixtures/package/*.js',
-				dest: 'test/fixtures/package/index.js'
+				dest: 'test/fixtures/index.js'
 			},
 			export: {
 				options: {
@@ -55,6 +55,13 @@ module.exports = function(grunt) {
 				},
 				src: 'test/fixtures/package/jquery.js',
 				dest: 'test/fixtures/jquery.js'
+			},
+			main: {
+				options: {
+					main: 'main.js'
+				},
+				src: 'test/fixtures/package/*.js',
+				dest: 'test/fixtures/main.js'
 			}
 		}
 	});

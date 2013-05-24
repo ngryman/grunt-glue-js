@@ -60,6 +60,7 @@ grunt.initConfig({
 
 ## Release History
 
+ * 2013-05-24   v0.0.3   `basepath` and `main` options support.
  * 2013-04-28   v0.0.2   Upgraded grunt-contrib-internal dep. Published to npm.
  * 2013-04-27   v0.0.1   Initial release.
 

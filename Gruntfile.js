@@ -40,9 +40,10 @@ module.exports = function(grunt) {
 				src: 'test/fixtures/package/*.js',
 				dest: 'test/fixtures/index.js'
 			},
-			export: {
+			export_and_basepath: {
 				options: {
-					export: 'App'
+					export: 'App',
+					basepath: 'test/fixtures/package'
 				},
 				src: 'test/fixtures/package/a.js',
 				dest: 'test/fixtures/app.js'

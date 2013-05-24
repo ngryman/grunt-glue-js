@@ -39,10 +39,17 @@ describe('gluejs', function() {
 			done();
 		});
 	});
-	
+
 	it('should use the specified main script', function(done) {
 		fs.readFile('test/fixtures/main.js', 'utf8', function(err, content) {
 			content.should.match(/undefined = require\(\'main\.js\'\);/);
+			done();
+		});
+	});
+
+	it('should set the specified base path', function(done) {
+		fs.readFile('test/fixtures/app.js', 'utf8', function(err, content) {
+			content.should.match(/require\.m\[0\] = \{ \"a\.js\"/);
 			done();
 		});
 	});

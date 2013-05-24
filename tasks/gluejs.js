@@ -37,6 +37,10 @@ module.exports = function(grunt) {
 			// export
 			if (options.export) { glue.export(options.export); }
 
+			// basepath
+			// TODO: should work with defaults
+			if (options.basepath) { glue.basepath(options.basepath); }
+
 			// includes source files - excludes the destination file if it is in the same directory of source(s) file(s)
 			file.src.forEach(function(src) {
 				if (src !== file.dest) {

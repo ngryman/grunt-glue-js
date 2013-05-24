@@ -31,7 +31,7 @@
 		"test": "grunt test"
 	},
 	"dependencies": {
-		"gluejs": "https://github.com/mixu/gluejs/tarball/master"
+		"gluejs": "https://github.com/ngryman/gluejs/tarball/master"
 	},
 	"devDependencies": {
 		"grunt-contrib-jshint": "~0.2.0",

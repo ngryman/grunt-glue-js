@@ -34,11 +34,11 @@
 		"gluejs": "https://github.com/ngryman/gluejs/tarball/master"
 	},
 	"devDependencies": {
-		"grunt-contrib-jshint": "~0.2.0",
-		"grunt-mocha-cli": "~1.0.3",
+		"grunt-contrib-jshint": "~0.6.0",
+		"grunt-mocha-cli": "~1.1.0",
 		"grunt-contrib-internal": "~0.4.5",
 		"grunt": "~0.4.0",
-		"chai": "~1.5.0"
+		"chai": "~1.7.0"
 	},
 	"peerDependencies": {
     	"grunt": "~0.4.0"

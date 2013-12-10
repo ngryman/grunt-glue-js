@@ -44,7 +44,6 @@ module.exports = function(grunt) {
 			// includes source files - excludes the destination file if it is in the same directory of source(s) file(s)
 			file.src.forEach(function(src) {
 				if (src !== file.dest) {
-					console.log(src);
 					glue.include(src);
 				}
 			});

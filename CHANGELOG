@@ -1,3 +1,13 @@
+v0.0.4:
+  date: 2013-12-10
+  changes:
+    - Set `gluejs` as an `npm` dep as requested fixes are now released.
+
+v0.0.3:
+  date: 2013-05-24
+  changes:
+    - `basepath` and `main` options support.
+
 v0.0.2:
   date: 2013-04-28
   changes:

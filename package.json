@@ -1,18 +1,18 @@
 {
-	"name": "grunt-contrib-gluejs",
+	"name": "grunt-glue-js",
 	"description": "Grunt task to build CommonJS modules for the browser using gluejs.",
 	"version": "0.0.4",
-	"homepage": "https://github.com/ngryman/grunt-contrib-gluejs",
+	"homepage": "https://github.com/ngryman/grunt-glue-js",
 	"author": {
     	"name": "Nicolas Gryman",
     	"url": "http://ngryman.sh"
   	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/ngryman/grunt-contrib-gluejs.git"
+		"url": "git://github.com/ngryman/grunt-glue-js.git"
 	},
 	"bugs": {
-		"url": "https://github.com/ngryman/grunt-contrib-gluejs/issues"
+		"url": "https://github.com/ngryman/grunt-glue-js/issues"
 	},
 	"keywords": [
 		"commonjs",

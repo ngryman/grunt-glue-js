@@ -49,7 +49,8 @@ grunt.initConfig({
   gluejs: {
     app: {
       options: {
-        export: 'App'
+        export: 'App',
+        main: 'public/scripts/index.js'
       },
       src: 'public/scripts/**/*.js',
       dest: 'public/app.js'
@@ -58,8 +59,34 @@ grunt.initConfig({
 });
 ```
 
+#### Advanced
+In this example, we use `coffeeify` to package our CoffeeScript app. We also showcase some more options.
+
+```javascript
+// Project configuration.
+grunt.initConfig({
+  gluejs: {
+    app: {
+      options: {
+        export: 'App',
+        report: true,
+        debug: true,
+        transform: 'coffeeify',
+        replace: {
+          jQuery: 'window.jQuery'
+        },
+        main: 'public/scripts/index.coffee'
+      },
+      src: 'public/scripts/**/*.coffee',
+      dest: 'public/app.js'
+    }
+  }
+});
+```
+
 ## Release History
 
+ * 2014-04-07   v0.0.5   Switch to `gluejs` v2 (2.3.7).
  * 2013-12-10   v0.0.4   Set `gluejs` as an `npm` dep as requested fixes are now released.
  * 2013-05-24   v0.0.3   `basepath` and `main` options support.
  * 2013-04-28   v0.0.2   Upgraded grunt-contrib-internal dep. Published to npm.

@@ -31,7 +31,7 @@
 		"test": "grunt test"
 	},
 	"dependencies": {
-		"gluejs": "~0.2.2"
+		"gluejs": "~2.3.7"
 	},
 	"devDependencies": {
 		"grunt-contrib-jshint": "~0.6.0",

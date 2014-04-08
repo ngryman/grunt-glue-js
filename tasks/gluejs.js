@@ -26,6 +26,12 @@ module.exports = function(grunt) {
 		var n_todo = 0;
 		var n_done = 0;
 		var n_err  = 0;
+		var n_files = this.files.length;
+
+		if (! (options.main || ((n_files == 1) && (this.files[0].src.length == 1)))) {
+			grunt.fail.warn("The `main` option to gluejs is mandatory when there is more than one source file.");
+			done(false);
+		}
 
 		// processes banner and footer.
 		var banner = options.banner ? grunt.template.process(options.banner) : '';
@@ -53,7 +59,6 @@ module.exports = function(grunt) {
 			if (options.transform) {
 				glue.options['transform'] = options.transform;
 			}
-
 
 			// basepath
 			if (options.basepath) {
@@ -84,6 +89,11 @@ module.exports = function(grunt) {
 			if (options.main) {
 				// the file that's exported as the root of the package
 				glue.main(options.main);
+			} else if ((n_files == 1) && (file.src.length == 1)) {
+				var relpath = file.src[0];
+				if (options.basepath)
+					relpath = path.relative(options.basepath, relpath);
+				glue.main(relpath);
 			}
 
 			// export

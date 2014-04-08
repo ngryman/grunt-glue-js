@@ -66,9 +66,15 @@ module.exports = function(grunt) {
 
 			// includes source files - excludes the destination file if it is in the same directory of source(s) file(s)
 			file.src.forEach(function(src) {
+				var relpath = src;
+				if (options.basepath)
+					relpath = path.relative(options.basepath, relpath);
+				if (options.debug) {
+					grunt.log.writeln("including '" + src + "' as '" + relpath + "'");
+				}
 				if (src !== file.dest) {
 					// includes all files in the dir
-					glue.include(src);
+					glue.include(relpath);
 				}
 			});
 

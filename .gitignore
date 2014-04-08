@@ -1,3 +1,7 @@
-node_modules
-npm-debug.log
 .DS_Store
+/node_modules
+/npm-debug.log
+/test/fixtures/app.js
+/test/fixtures/index.js
+/test/fixtures/main.js
+/test/fixtures/jquery.js

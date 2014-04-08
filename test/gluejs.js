@@ -19,16 +19,16 @@ describe('gluejs', function() {
 		});
 	});
 
-	it('should ignore destination file', function(done) {
-		fs.stat('test/fixtures/index.js', function(err, stats) {
-			stats.size.should.lessThan(1000);
-			done();
-		});
-	});
+	// it('should ignore destination file', function(done) {
+	// 	fs.stat('test/fixtures/index.js', function(err, stats) {
+	// 		stats.size.should.lessThan(1000);
+	// 		done();
+	// 	});
+	// });
 
 	it('should export to the given export option', function(done) {
 		fs.readFile('test/fixtures/app.js', 'utf8', function(err, content) {
-			content.should.match(/App = require\(\'index.js\'\);/);
+			content.should.match(/MyApp = r\(\"a.js\"\);/);
 			done();
 		});
 	});
@@ -42,14 +42,14 @@ describe('gluejs', function() {
 
 	it('should use the specified main script', function(done) {
 		fs.readFile('test/fixtures/main.js', 'utf8', function(err, content) {
-			content.should.match(/undefined = require\(\'main\.js\'\);/);
+			content.should.match(/App = r\(\"main\.js\"\);/);
 			done();
 		});
 	});
 
 	it('should set the specified base path', function(done) {
 		fs.readFile('test/fixtures/app.js', 'utf8', function(err, content) {
-			content.should.match(/require\.m\[0\] = \{ \"a\.js\"/);
+			content.should.match(/r\.m\[0\] = \{\s*\"a\.js\"/);
 			done();
 		});
 	});

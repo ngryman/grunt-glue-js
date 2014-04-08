@@ -33,16 +33,19 @@ module.exports = function(grunt) {
 
 		gluejs: {
 			directory: {
+				options: {
+					main: 'main.js'
+				},
 				src: 'test/fixtures/package/*.js',
 				dest: 'test/fixtures/index.js'
 			},
-			ignore: {
-				src: 'test/fixtures/package/*.js',
-				dest: 'test/fixtures/index.js'
-			},
+			// ignore: {
+			// 	src: 'test/fixtures/package/*.js',
+			// 	dest: 'test/fixtures/index.js'
+			// },
 			export_and_basepath: {
 				options: {
-					export: 'App',
+					export: 'MyApp',
 					basepath: 'test/fixtures/package'
 				},
 				src: 'test/fixtures/package/a.js',

@@ -39,10 +39,6 @@ module.exports = function(grunt) {
 				src: 'test/fixtures/package/*.js',
 				dest: 'test/fixtures/index.js'
 			},
-			// ignore: {
-			// 	src: 'test/fixtures/package/*.js',
-			// 	dest: 'test/fixtures/index.js'
-			// },
 			export_and_basepath: {
 				options: {
 					export: 'MyApp',

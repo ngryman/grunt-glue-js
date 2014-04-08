@@ -10,6 +10,7 @@ describe('gluejs', function() {
 		fs.unlinkSync('test/fixtures/index.js');
 		fs.unlinkSync('test/fixtures/app.js');
 		fs.unlinkSync('test/fixtures/jquery.js');
+		fs.unlinkSync('test/fixtures/main.js');
 	});
 
 	it('should build a directory module', function(done) {
@@ -18,13 +19,6 @@ describe('gluejs', function() {
 			done();
 		});
 	});
-
-	// it('should ignore destination file', function(done) {
-	// 	fs.stat('test/fixtures/index.js', function(err, stats) {
-	// 		stats.size.should.lessThan(1000);
-	// 		done();
-	// 	});
-	// });
 
 	it('should export to the given export option', function(done) {
 		fs.readFile('test/fixtures/app.js', 'utf8', function(err, content) {

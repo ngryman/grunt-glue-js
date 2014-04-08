@@ -25,12 +25,12 @@ module.exports = function(grunt) {
 
 		var n_todo = 0;
 		var n_done = 0;
-		var n_err  = 0;
+		var n_err = 0;
 		var n_files = this.files.length;
 
-		if (! (options.main || ((n_files == 1) && (this.files[0].src.length == 1)))) {
-			grunt.fail.warn("The `main` option to gluejs is mandatory when there is more than one source file.");
-			done(false);
+		if (!(options.main || ((n_files == 1) && (this.files[0].src.length == 1)))) {
+			grunt.fail.fatal("The `main` option to gluejs is mandatory when there is more than one source file.");
+			return;
 		}
 
 		// processes banner and footer.
@@ -47,13 +47,21 @@ module.exports = function(grunt) {
 				grunt.log.writeln("processing file '" + file.src + "'");
 			}
 
-			if (options.cache !== null) { glue.set('cache', options.cache); }
-			if (options.require !== null) { glue.set('require', options.require); }
-			if (options.report !== null) { glue.set('report', options.report); }
+			if (options.cache !== null) {
+				glue.set('cache', options.cache);
+			}
+			if (options.require !== null) {
+				glue.set('require', options.require);
+			}
+			if (options.report !== null) {
+				glue.set('report', options.report);
+			}
 			//glue.set('cache', false).set('require', false).set('report', true);
 
 			// command
-			if (options.command) { glue.set('command', options.command); }
+			if (options.command) {
+				glue.set('command', options.command);
+			}
 
 			// transform
 			if (options.transform) {
@@ -64,7 +72,8 @@ module.exports = function(grunt) {
 			if (options.basepath) {
 				// output paths are relative to this
 				glue.basepath(options.basepath);
-			} else {
+			}
+			else {
 				// output paths are relative to this
 				glue.basepath(process.cwd());
 			}
@@ -84,12 +93,15 @@ module.exports = function(grunt) {
 			});
 
 			// exclude
-			if (options.exclude) { glue.exclude(options.exclude); }
+			if (options.exclude) {
+				glue.exclude(options.exclude);
+			}
 
 			if (options.main) {
 				// the file that's exported as the root of the package
 				glue.main(options.main);
-			} else if ((n_files == 1) && (file.src.length == 1)) {
+			}
+			else if ((n_files == 1) && (file.src.length == 1)) {
 				var relpath = file.src[0];
 				if (options.basepath)
 					relpath = path.relative(options.basepath, relpath);
@@ -97,7 +109,9 @@ module.exports = function(grunt) {
 			}
 
 			// export
-			if (options.export) { glue.export(options.export); }
+			if (options.export) {
+				glue.export(options.export);
+			}
 
 			// replace
 			if (options.replace) {
@@ -119,7 +133,8 @@ module.exports = function(grunt) {
 					grunt.warn.writeln('File "' + file.dest + '" NOT created.');
 
 					n_err++;
-				} else {
+				}
+				else {
 					output = banner + output + footer;
 					grunt.file.write(file.dest, output);
 

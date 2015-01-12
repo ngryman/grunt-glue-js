@@ -1,7 +1,7 @@
 {
 	"name": "grunt-glue-js",
 	"description": "Grunt task to build CommonJS modules for the browser using gluejs.",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"homepage": "https://github.com/ngryman/grunt-glue-js",
 	"author": {
     	"name": "Nicolas Gryman",

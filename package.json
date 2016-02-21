@@ -4,9 +4,9 @@
 	"version": "0.0.5",
 	"homepage": "https://github.com/ngryman/grunt-glue-js",
 	"author": {
-    	"name": "Nicolas Gryman",
-    	"url": "http://ngryman.sh"
-  	},
+		"name": "Nicolas Gryman",
+		"url": "http://ngryman.sh"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/ngryman/grunt-glue-js.git"
@@ -41,6 +41,6 @@
 		"chai": "~1.7.0"
 	},
 	"peerDependencies": {
-    	"grunt": "~0.4.0"
-  	}
+		"grunt": ">=0.4.0"
+	}
 }

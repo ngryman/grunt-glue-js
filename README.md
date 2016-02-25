@@ -3,6 +3,9 @@
 > Grunt task to build CommonJS modules for the browser using gluejs.
 
 
+**This project is not maintained anymore, see [grunt-gluejs2](https://github.com/devatwork/grunt-gluejs2)
+
+
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`

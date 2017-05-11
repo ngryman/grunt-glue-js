@@ -31,14 +31,14 @@
 		"test": "grunt test"
 	},
 	"dependencies": {
-		"gluejs": "~2.3.7"
+		"gluejs": "~2.4.0"
 	},
 	"devDependencies": {
-		"grunt-contrib-jshint": "~0.6.0",
-		"grunt-mocha-cli": "~1.1.0",
-		"grunt-contrib-internal": "~0.4.5",
-		"grunt": "~0.4.0",
-		"chai": "~1.7.0"
+		"grunt-contrib-jshint": "~1.1.0",
+		"grunt-mocha-cli": "~3.0.0",
+		"grunt-contrib-internal": "~1.2.3",
+		"grunt": "~1.0.1",
+		"chai": "~3.5.0"
 	},
 	"peerDependencies": {
     	"grunt": "~0.4.0"

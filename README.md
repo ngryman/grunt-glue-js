@@ -1,5 +1,7 @@
 # grunt-glue-js [![Build Status](https://travis-ci.org/ngryman/grunt-glue-js.png?branch=master)](https://travis-ci.org/ngryman/grunt-glue-js)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngryman/grunt-glue-js.svg)](https://greenkeeper.io/)
+
 > Grunt task to build CommonJS modules for the browser using gluejs.
 
 
